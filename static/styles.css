@@ -2,8 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #111;
     color: #fff;
-    scroll-behavior: smooth; /* Efeito de scroll suave */
-}
+    scroll-behavior: smooth; 
 
 .navbar {
     background-color: #222;
@@ -13,24 +12,24 @@ body {
     background: linear-gradient(to right, #6a0dad, #110033);
     padding: 100px 0;
     position: relative;
-    overflow: hidden; /* Para evitar que os elementos fiquem fora da área */
+    overflow: hidden; 
 }
 
 .header h1 {
     font-size: 3.5rem;
-    animation: fadeIn 1.5s ease-in-out; /* Animação de entrada */
+    animation: fadeIn 1.5s ease-in-out; 
 }
 
 .header::after {
     content: '';
-    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover; /* Imagem de fundo */
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover; 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.3; /* Opacidade para o efeito de parallax */
-    z-index: -1; /* Para ficar atrás do conteúdo */
+    opacity: 0.3;
+    z-index: -1;
 }
 
 @keyframes fadeIn {
@@ -42,16 +41,16 @@ body {
     background-color: #ffea00;
     color: #000;
     font-weight: bold;
-    transition: transform 0.3s; /* Transição ao passar o mouse */
+    transition: transform 0.3s; 
 }
 
 .btn-warning:hover {
-    transform: scale(1.1); /* Aumentar o tamanho do botão ao passar o mouse */
+    transform: scale(1.1); 
 }
 
 #about, #skills, #projects, #contact {
     padding: 60px 0;
-    animation: slideIn 0.8s ease-out; /* Animação para as seções */
+    animation: slideIn 0.8s ease-out; 
 }
 
 @keyframes slideIn {
@@ -69,11 +68,11 @@ body {
 }
 
 .card {
-    transition: transform 0.3s; /* Transição nas cartas */
+    transition: transform 0.3s; 
 }
 
 .card:hover {
-    transform: scale(1.05); /* Aumentar o tamanho da carta ao passar o mouse */
+    transform: scale(1.05); 
 }
 
 footer {
@@ -91,5 +90,5 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #fff; /* Mudar a cor ao passar o mouse */
+    color: #fff; 
 }

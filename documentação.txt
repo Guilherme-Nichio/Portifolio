@@ -1,0 +1,15 @@
+Inclusão do Bootstrap: O Bootstrap é incluído no <head> através de um link para o CDN, garantindo que os estilos CSS e os scripts JavaScript necessários para o funcionamento dos componentes estejam disponíveis. Isso facilita o uso de todos os componentes e estilos do Bootstrap sem precisar armazenar os arquivos localmente.
+
+Navbar (Barra de Navegação): A barra de navegação foi criada com classes Bootstrap que proporcionam um layout responsivo e estilizado. A classe navbar-expand-lg faz com que a navbar se expanda em telas grandes e colapse em telas menores. O estilo escuro é dado pela combinação de navbar-dark e bg-dark. A classe ms-auto é usada para alinhar os itens de navegação à direita.
+
+Header (Cabeçalho): O cabeçalho foi centralizado com text-center e utiliza text-light para deixar o texto claro. A classe container garante que o conteúdo tenha margens laterais apropriadas, e o botão de chamada para ação ("Veja Meus Projetos") é estilizado com btn btn-warning, que aplica a cor amarela, juntamente com mt-4 para adicionar um espaçamento superior.
+
+Seções (About, Skills, Projects, Contact): As seções foram organizadas usando as classes de espaçamento e layout do Bootstrap, como py-5 para adicionar espaçamento vertical e bg-dark para aplicar um fundo escuro. O uso da classe container em cada seção centraliza o conteúdo e ajusta a largura conforme a tela. Para o layout das habilidades, row e col-md-4 criam uma estrutura de três colunas que se ajustam responsivamente em diferentes tamanhos de tela.
+
+Cards (Projetos): Os projetos são apresentados dentro de cards estilizados com o Bootstrap. A classe card aplica o estilo de um card básico com borda e padding, e card-body adiciona espaçamento interno. O título do projeto usa a classe card-title e o texto descritivo usa card-text. As colunas que contêm os cards utilizam col-md-6 para garantir que dois cards sejam exibidos lado a lado em telas médias ou maiores, e mb-4 adiciona espaçamento inferior entre eles.
+
+Footer (Rodapé): O rodapé utiliza text-center para centralizar o texto e py-3 para adicionar padding vertical. O fundo escuro e o texto claro são obtidos pelas classes bg-dark e text-light, mantendo a consistência visual com o restante da página.
+
+Botão de Email: O botão de contato por email é estilizado com btn btn-warning, o que o torna amarelo e consistente com a paleta de cores do site. O Bootstrap facilita a criação de botões com estilos pré-definidos sem necessidade de CSS adicional.
+
+Outros Componentes: O botão de menu da navbar, exibido em telas menores, utiliza a classe navbar-toggler, permitindo que o menu colapse em um botão "hambúrguer" em dispositivos móveis. Os ícones sociais são centralizados e organizados usando classes de ícones do FontAwesome, mas o layout do Bootstrap ajuda a garantir que eles fiquem alinhados corretamente na página.
