@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+    scroll-behavior: smooth; /* Efeito de scroll suave */
+}
+
+.navbar {
+    background-color: #222;
+}
+
+.header {
+    background: linear-gradient(to right, #6a0dad, #110033);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden; /* Para evitar que os elementos fiquem fora da área */
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    animation: fadeIn 1.5s ease-in-out; /* Animação de entrada */
+}
+
+.header::after {
+    content: '';
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover; /* Imagem de fundo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; /* Opacidade para o efeito de parallax */
+    z-index: -1; /* Para ficar atrás do conteúdo */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.btn-warning {
+    background-color: #ffea00;
+    color: #000;
+    font-weight: bold;
+    transition: transform 0.3s; /* Transição ao passar o mouse */
+}
+
+.btn-warning:hover {
+    transform: scale(1.1); /* Aumentar o tamanho do botão ao passar o mouse */
+}
+
+#about, #skills, #projects, #contact {
+    padding: 60px 0;
+    animation: slideIn 0.8s ease-out; /* Animação para as seções */
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills ul li {
+    margin-bottom: 10px;
+}
+
+.card {
+    transition: transform 0.3s; /* Transição nas cartas */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumentar o tamanho da carta ao passar o mouse */
+}
+
+footer {
+    background-color: #222;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ffea00;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff; /* Mudar a cor ao passar o mouse */
+}
